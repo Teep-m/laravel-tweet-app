@@ -64,3 +64,14 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# 開発環境構築
+下記コマンドを実行してください。
+
+```
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v $(pwd): /var/www/html \
+    -w /var/www/html \
+    laravelsail/php81-composer:latest \
+    composer install --ignore-platform-reqs
