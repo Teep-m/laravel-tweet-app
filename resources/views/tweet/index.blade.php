@@ -18,12 +18,15 @@
                 <label for="tweet-content">つぶやき</label>
                 <span>140文字まで</span>
                 <textarea name="tweet" id="tweet-content" type="text" placeholder="つぶやきを入力"></textarea>
+                @error('tweet')
+                    <p style="color: red;">{{ $message }}</p>
+                @enderror
                 <button type="submit">投稿</button>
             </form>
         </div>
         <div>
             @foreach ($tweets as $tweet)
-                <p>{{ $tweet->content }}</p>
+                <pre>{{ $tweet->content }}</pre>
             @endforeach
         </div>
     </body>
