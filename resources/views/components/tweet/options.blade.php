@@ -13,7 +13,7 @@
             class="bg-white rounded shadow-md absolute right-0 w-24 z-20 pt-1 pb-1">
             <div>
                 <a href="{{ route('tweet.update.index', ['tweetId' => $tweetId]) }}"
-                    class="flex items-center pt-1 pb-1 pl-3 pr-3 hover:bg-gray-100">
+                    class="flex items-center pt-1 pb-1 pl-3 pr-3 bg-blue-200 hover:bg-blue-300">
                     <svg xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="currentColor" class="w-6 h-6">
@@ -33,7 +33,7 @@
                     @method('DELETE')
                     @csrf
                     <button type="submit"
-                        class="flex items-center w-full pt-1 pb-1 pl-3 pr-3 hover:bg-gray-100">
+                        class="flex items-center w-full pt-1 pb-1 pl-3 pr-3 bg-red-200 hover:bg-red-300">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="currentColor"
